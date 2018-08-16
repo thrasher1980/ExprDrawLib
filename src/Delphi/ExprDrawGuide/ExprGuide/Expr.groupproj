@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4ACF4722-0B42-4433-A015-455A1CB62E33}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ExprGuide.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TestExp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ExprGuide">
+        <MSBuild Projects="ExprGuide.dproj"/>
+    </Target>
+    <Target Name="ExprGuide:Clean">
+        <MSBuild Projects="ExprGuide.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExprGuide:Make">
+        <MSBuild Projects="ExprGuide.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestExp">
+        <MSBuild Projects="TestExp.dproj"/>
+    </Target>
+    <Target Name="TestExp:Clean">
+        <MSBuild Projects="TestExp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestExp:Make">
+        <MSBuild Projects="TestExp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ExprGuide;TestExp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ExprGuide:Clean;TestExp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ExprGuide:Make;TestExp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

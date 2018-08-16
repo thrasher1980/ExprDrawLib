@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2018.08.13 14:23:13.050,=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018.08.13 14:25:02.338,=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\ExprDraw.pas</Transaction>
+    <Transaction>2018.08.13 14:25:02.341,=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\ExprMake.pas</Transaction>
+    <Transaction>2018.08.13 14:25:29.977,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\MainFormF.pas=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018.08.13 14:25:29.977,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\MainFormF.dfm=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2018.08.13 14:25:40.442,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\MainFormF.dfm=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\MainFormF.dfm</Transaction>
+    <Transaction>2018.08.13 14:25:40.442,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\MainFormF.pas=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\MainFormF.pas</Transaction>
+    <Transaction>2018.08.13 14:25:47.865,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\TestExp.dproj=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018.08.14 12:32:50.319,=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\Unit1.pas</Transaction>
+    <Transaction>2018.08.14 12:33:37.673,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\ExprException.pas=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\Unit1.pas</Transaction>
+    <Transaction>2018.08.14 12:54:06.063,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\ExpressionException.pas=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExpDrawExample\ExprGuide\ExprException.pas</Transaction>
+  </Transactions>
+</BorlandProject>

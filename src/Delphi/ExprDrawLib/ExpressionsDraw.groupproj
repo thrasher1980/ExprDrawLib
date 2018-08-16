@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E2FDB15D-004B-4589-8DF6-93DA6F5F6114}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ExprDraw32.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ExprDraw64.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ExprDraw32">
+        <MSBuild Projects="ExprDraw32.dproj"/>
+    </Target>
+    <Target Name="ExprDraw32:Clean">
+        <MSBuild Projects="ExprDraw32.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExprDraw32:Make">
+        <MSBuild Projects="ExprDraw32.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExprDraw64">
+        <MSBuild Projects="ExprDraw64.dproj"/>
+    </Target>
+    <Target Name="ExprDraw64:Clean">
+        <MSBuild Projects="ExprDraw64.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExprDraw64:Make">
+        <MSBuild Projects="ExprDraw64.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ExprDraw32;ExprDraw64"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ExprDraw32:Clean;ExprDraw64:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ExprDraw32:Make;ExprDraw64:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.497,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExtnDraw32.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.416,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExtentionsDraw.dproj=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExtnDraw32.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.247,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExtnDraw32.dproj=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExtentionsDraw.dproj</Transaction>
+    <Transaction>2018.08.13 13:43:59.615,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExprDraw\ExprDraw32.dproj=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExprDraw\ExtnDraw32.dproj</Transaction>
+    <Transaction>2018.08.16 11:56:27.671,C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExprDraw\ExprDrawLib.dproj=C:\Users\v.vyaznitsev\Documents\RAD Studio\Projects\ExprDraw\ExprDraw32.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,38 @@
+unit ExpressionException;
+
+interface
+uses SysUtils;
+
+const
+   // Коды ошибок
+   EC_ExpectedSymbol:integer = 1;
+   EC_InvalidSymbol:integer = 2;
+   EC_IncompletedString:integer = 3;
+
+
+type
+        EExpressionException=class(Exception)
+        public
+        ErrorMessage:string;
+        ErrorCode:integer;
+        ErrorPosition:integer;
+        constructor Create(ErrorCode:integer); overload;
+        constructor Create(ErrorCode:integer;ErrorMessage:string); overload;
+        end;
+
+implementation
+
+constructor EExpressionException.Create(ErrorCode: Integer);
+begin
+  inherited;
+  Self.ErrorCode := ErrorCode;
+end;
+
+constructor EExpressionException.Create(ErrorCode:integer;ErrorMessage:string);
+begin
+  inherited;
+  Self.ErrorCode := ErrorCode;
+  Self.ErrorMessage := ErrorMessage;
+end;
+
+end.

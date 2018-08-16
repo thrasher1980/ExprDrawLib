@@ -1,0 +1,36 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{C6441D75-FD8F-46E5-BFFC-8A78239EF410}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="ExtentionsDraw.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="ExtentionsDraw">
+			<MSBuild Projects="ExtentionsDraw.dproj"/>
+		</Target>
+		<Target Name="ExtentionsDraw:Clean">
+			<MSBuild Projects="ExtentionsDraw.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ExtentionsDraw:Make">
+			<MSBuild Projects="ExtentionsDraw.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="ExtentionsDraw"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="ExtentionsDraw:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="ExtentionsDraw:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>
