@@ -14,3 +14,5 @@ I tried that library could work in x64 but I suffered fiasco in that . It work o
 But in x86 library work correctly always.
 
 WARNING. Make sure that ExprDrawLib32.dll or ExprDrawLib64.dll will be in your Application executable module folder.
+
+Victor Vyaznitsev, 2018
